@@ -1,7 +1,7 @@
 # Windows Server Active Directory Home Lab
 
 This repository documents a Windows Server AD Home lab that i built in virtual environment.
-Goal for this lab was to practice basic Win Server administartion, ad management, DNS, DHCP, Group Policy, sharing permissions and client domain joining.
+Goal for this lab was to practice basic Win Server administration, ad management, DNS, DHCP, Group Policy, sharing permissions and client domain joining.
 For this lab i used one Windows Server machine that was used as a Domain Controller and one Windows Client machine that joined my AD domain.
 
 ---
@@ -65,7 +65,7 @@ And the Windows client received the IP address `192.168.10.54` after joining the
 
 ## Group Policy Configuration
 
-I made an GPO named `DisableControlPanel` and linked it to the IT OU
+I made a GPO named `DisableControlPanel` and linked it to the IT OU
 
 It was used to practice applying user restrictions through AD. 
 
@@ -92,11 +92,11 @@ and also i configured NTFS permissions on IT folder, IT_Admins group was granted
 
 ## Client Domain Join
 
-I sucessfully joined `lab.local` AD domain with my Windows Client machine.
+I successfully joined `lab.local` AD domain with my Windows Client machine.
 
 ![Client Joined Domain](screenshots/12-client-joined-domain.png)
 
-Tested the domain login with an cmd command `whoami`
+Tested the domain login with a cmd command `whoami`
 
 ![Whoami Domain User](screenshots/13-whoami-domain-user.png)
 
@@ -120,14 +120,14 @@ and the domain name lab.local resolved successfully
 
 This lab helped me understand how Win Server and AD are used to manage users, devices, permissions, DNS, DHCP and group policy in a company environment
 
-Also helped me practice some basic troubleshooting steps such as checking ip configs, veryfing DNS, testing network connectivity to the AD, checking and testing permissions and sharing files over the network and 
+Also helped me practice some basic troubleshooting steps such as checking ip configs, verifying DNS, testing network connectivity to the AD, checking and testing permissions and sharing files over the network and 
 checking applied Group Policies, learned some new cmds like for forcing group policy update (`gpupdate /force`).
 
-And it was a lot of fun to do this homelab, time flied away as i enjoyed solving problems and creating all this.
+And it was a lot of fun to do this homelab, time flew by as i enjoyed solving problems and creating all this.
 
 ## Useful Commands
 
-Some useful commands that hepled me resolve and test everything that i made in this homelab are:
+Some useful commands that helped me resolve and test everything that i made in this homelab are:
 
 ```
 ipconfig /all - this command provides detailed network information
